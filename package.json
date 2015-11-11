@@ -1,0 +1,17 @@
+{
+  "name": "comic-cloud-client-vue.js",
+  "version": "0.0.1",
+  "description": "",
+  "devDependencies": {
+    "css-loader": "^0.22.0",
+    "html-loader": "^0.3.0",
+    "webpack": "^1.12.4"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --inline --hot --quiet",
+    "build": "webpack -p"
+  },
+  "dependencies": {
+    "vue": "^1.0.7"
+  }
+}
