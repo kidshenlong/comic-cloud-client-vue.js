@@ -7,8 +7,14 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.styl$/, loader: "style!css!stylus" },
-            { test: /\.html$/, loader: "html" }
+            { test: /\.css$/, loader: "style-loader!css-loader" },
+            { test: /\.html$/, loader: "html" },
+            { test: /\.vue$/, loader: 'vue' },
+            { test: /\.js$/, exclude: /node_modules|vue\/src|vue-router\/|vue-loader\/|vue-hot-reload-api\//, loader: 'babel' }
         ]
+    },
+    babel: {
+        presets: ['es2015'],
+        plugins: ['transform-runtime']
     }
 }
