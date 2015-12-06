@@ -1,7 +1,8 @@
 body {
-    background-color: #ccc;
+    background-color: white;
     font-family: 'Roboto', sans-serif;
 }
-h1 {
-    color: pink;
+a.no_style {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
 }

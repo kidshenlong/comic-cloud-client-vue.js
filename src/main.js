@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import App from './app.vue'
 import Library from './views/library.vue'
+import "./styles.css"
 
 // install router
 Vue.use(Router)

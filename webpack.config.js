@@ -10,7 +10,8 @@ module.exports = {
             { test: /\.css$/, loader: "style-loader!css-loader" },
             { test: /\.html$/, loader: "html" },
             { test: /\.vue$/, loader: 'vue' },
-            { test: /\.js$/, exclude: /node_modules|vue\/src|vue-router\/|vue-loader\/|vue-hot-reload-api\//, loader: 'babel' }
+            { test: /\.js$/, exclude: /node_modules|vue\/src|vue-router\/|vue-loader\/|vue-hot-reload-api\//, loader: 'babel' },
+            { test: /\.scss$/, loaders: ["style", "css", "sass"]}
         ]
     },
     babel: {
